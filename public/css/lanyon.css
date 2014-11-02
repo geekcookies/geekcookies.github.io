@@ -573,6 +573,10 @@ a.pagination-item:hover {
   border: 1px solid #24D830;
 }
 
+.theme-base-0g a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 /*Not working,placed in poole.css */
 /*.theme-base-0g .strong{*/
   /*color: #03BA0F;*/
