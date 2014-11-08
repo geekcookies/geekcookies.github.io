@@ -237,11 +237,10 @@ blockquote p:last-child {
   }
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 0 1rem;
-  border-radius: 5px;
+img.site-logo {
+  width: 64px;
+  margin-right: 8px;
+  border-radius: 16px;
 }
 
 /* Tables */
