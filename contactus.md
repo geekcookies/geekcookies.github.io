@@ -12,9 +12,9 @@ Twitter: [https://twitter.com/geekcookiescast](https://twitter.com/geekcookiesca
 
 Email: [geekcookiespodcast@gmail.com](mailto:geekcookiespodcast@gmail.com)
 
-Feed RSS: [http://geekcookies.github.io/atom.xml](http://geekcookies.github.io/atom.xml)
+Feed RSS: [http://geekcookies.github.io/feed.xml](http://geekcookies.github.io/feed.xml)
 
-Link podcast su iTunes: ...
+Link podcast su iTunes: Abbiate ancora pazienza! 
 
 Pagina facebook: [https://www.facebook.com/geekcookiescast](https://www.facebook.com/geekcookiescast) 
 <br /> <br />
