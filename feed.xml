@@ -42,7 +42,7 @@ layout: null
                 <enclosure url="{{post.podcast.file}}" type="{{site.podcast.defaultFileType}}" length="{{post.podcast.filesize}}" />
 
                 <itunes:author>{{site.podcast.owner.email}}</itunes:author>
-                <itunes:summary><![CDATA[{{ post.excerpt |  cdata_escape }}]]></itunes:summary>
+                <itunes:summary><![CDATA[{{ post.excerpt | xml_escape }}]]></itunes:summary>
                 <itunes:duration>{{post.podcast.length}}</itunes:duration>
                 {% endif %}
 			</item>
