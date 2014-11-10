@@ -6,9 +6,10 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
-<footer>
-   {% include disqus.html %}
-</footer>
+{% include social_buttons.html %}
+  <footer>
+     {% include disqus.html %}
+  </footer>
 </div>
 
 <div class="related">
@@ -26,3 +27,7 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery.1.10.2.min.js"><\/script>')</script>
+<script src="js/rrssb.min.js"></script>
