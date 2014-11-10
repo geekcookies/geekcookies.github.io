@@ -6,7 +6,7 @@ title: Contattaci
 Il cast di GeekCookies è raggiungibile sia attraverso i canali ufficiali del podcast sia attraverso tutti gli account personali degli autori. Rispondono ad ogni vostra richiesta e sono felici di entrare in contatto con gli ascoltatori. 
 Scarica le puntate del podcast su tutte le piattaforme più conosciute, potrai ascoltare le puntate appena saranno disponibili!
 
-##GeekCokies:
+##GeekCookies:
 
 Twitter: [https://twitter.com/geekcookiescast](https://twitter.com/geekcookiescast)
 
