@@ -37,7 +37,7 @@ podcast:
     email: geekcookiespodcast@gmail.com 
   explicit: "no"
   image: http://geekcookies.github.io/images/icon.png 
-  category: CATEGORIA
+  category: Technology 
   subtitle: 'Join the Dark Side of the Geek: we have Cookies.'
   defaultFileType: audio/mpeg
   year: 2014
