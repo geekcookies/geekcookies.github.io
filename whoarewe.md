@@ -5,7 +5,7 @@ title: Chi siamo
 
 ## Francesco
 
-Torinese, classe 1978. Smonta e rimonta dispositivi dall’età di 10 anni e la domanda che si pone di fronte ad ogni novità è “come funziona?”. Stua da elettronico, inizia a lavorare come metalmeccanico e poi diventa, casualmente, sistemista Windows, Linux, Mac OS e  “supportatore” di utenti dal lontano duemila (millennuim bug e passaggio all’Euro compresi). Si diverte se ha dei bit da controllare e buona musica rock da ascoltare. Rintracciabile su Twitter [@cesco_78](https://twitter.com/cesco_78) e sul blog [iltucci.com](http://iltucci.com/) dove sporadicamente imbratta i muri “dell’Internet”
+Torinese, classe 1978. Smonta e rimonta dispositivi dall’età di 10 anni e la domanda che si pone di fronte ad ogni novità è “come funziona?”. Studia da elettronico, inizia a lavorare come metalmeccanico e poi diventa, casualmente, sistemista Windows, Linux, Mac OS e  “supportatore” di utenti dal lontano duemila (millennuim bug e passaggio all’Euro compresi). Si diverte se ha dei bit da controllare e buona musica rock da ascoltare. Rintracciabile su Twitter [@cesco_78](https://twitter.com/cesco_78) e sul blog [iltucci.com](http://iltucci.com/) dove sporadicamente imbratta i muri “dell’Internet”
 
 
 ## Mario
