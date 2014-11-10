@@ -15,6 +15,8 @@ Email: [geekcookiespodcast@gmail.com](mailto:geekcookiespodcast@gmail.com)
 Feed RSS: [http://geekcookies.github.io/atom.xml](http://geekcookies.github.io/atom.xml)
 
 Link podcast su iTunes: ...
+
+Pagina facebook: [https://www.facebook.com/geekcookiescast](https://www.facebook.com/geekcookiescast) 
 <br /> <br />
 
 ##Francesco:
