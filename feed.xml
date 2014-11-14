@@ -39,7 +39,7 @@ layout: null
 				<guid isPermaLink="true">{{ post_url }}</guid>
 
                 {% if post.podcast %}
-                <enclosure url="{{post.podcast.file}}" type="{{site.podcast.defaultFileType}}" length="{{post.podcast.filesize}}" />
+                <enclosure url="{{post.podcast.file_mp3}}" type="{{site.podcast.defaultFileType}}" length="{{post.podcast.filesize}}" />
 
                 <itunes:author>{{site.podcast.owner.email}}</itunes:author>
                 <itunes:summary><![CDATA[{{ post.excerpt | strip_html }}]]></itunes:summary>

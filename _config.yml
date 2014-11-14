@@ -4,7 +4,7 @@ highlighter:         pygments
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           date
+permalink:           none
 relative_permalinks: false
 
 # Setup
