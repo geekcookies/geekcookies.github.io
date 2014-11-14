@@ -577,6 +577,11 @@ a.pagination-item:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
+
+audio {
+width: 100%;
+}
+
 /*Not working,placed in poole.css */
 /*.theme-base-0g .strong{*/
   /*color: #03BA0F;*/
