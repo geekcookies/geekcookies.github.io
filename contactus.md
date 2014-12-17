@@ -14,7 +14,7 @@ Email: [geekcookiespodcast@gmail.com](mailto:geekcookiespodcast@gmail.com)
 
 Feed RSS: [http://geekcookies.github.io/feed.xml](http://geekcookies.github.io/feed.xml)
 
-Link podcast su iTunes: Abbiate ancora pazienza! 
+Link podcast su iTunes: [https://itunes.apple.com/it/podcast/geek-cookies./id942553422?l=it](https://itunes.apple.com/it/podcast/geek-cookies./id942553422?l=it) 
 
 Pagina facebook: [https://www.facebook.com/geekcookiescast](https://www.facebook.com/geekcookiescast) 
 <br /> <br />
