@@ -13,16 +13,15 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
-<div class="post-content-truncate">
-  {% if post.content contains "<!-- more -->" %}
-    {{ post.content | split:"<!-- more -->" | first % }}
-  {% else %}
-    {{ post.content | strip_html | truncatewords:100 }}
-  {% endif %}
-<div><a href="{{ site.baseurl }}{{ post.url }}">Continua leggere questo post...</a></div>
-</div>
- 
+    <div class="post-content-truncate">
+        {% if post.content contains "<!-- more -->" %}
+            {{ post.content | split:"<!-- more -->" | first % }}
+        {% else %}
+            {{ post.content | strip_html | truncatewords:100 }}
+            {% endif %}
+        <div><a href="{{ post.url }}">(Continua leggere)</a></div>
+    </div>
+    
  </div>
   {% endfor %}
 </div>
