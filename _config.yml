@@ -26,7 +26,7 @@ version:             1.0.0
 
 future: false
 permalink: pretty
-markdown: rdiscount
+markdown: kramdown
 
 exclude:
 - README.md
