@@ -33,7 +33,13 @@ layout: null
                 {% assign post_url = site.url | append: post.url %}
                 {% assign post_title = post.title | append: " - " | append: site.title %}
 				<title>{{ post.title }}</title>
-				<description><![CDATA[{{ post.excerpt | strip_html }}]]></description>
+                <description><![CDATA[
+                                {% if post.content contains "<!-- more -->" %}
+                                    {{ post.content | split:"<!-- more -->" | first % | strip_html}}
+                                {% else %}
+                                    {{ post.content | strip_html | truncatewords:100 }}
+                                {% endif %}
+                    ]]></description>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				<link>{{ post_url }}</link>
 				<guid isPermaLink="true">{{ post_url }}</guid>
@@ -42,7 +48,13 @@ layout: null
                 <enclosure url="{{post.podcast.filemp3}}" type="{{site.podcast.defaultFileType}}" length="{{post.podcast.filesize}}" />
 
                 <itunes:author>{{site.podcast.owner.email}}</itunes:author>
-                <itunes:summary><![CDATA[{{ post.excerpt | strip_html }}]]></itunes:summary>
+                <itunes:summary><![CDATA[
+                                {% if post.content contains "<!-- more -->" %}
+                                    {{ post.content | split:"<!-- more -->" | first % | strip_html}}
+                                {% else %}
+                                    {{ post.content | strip_html | truncatewords:100 }}
+                                {% endif %}
+                                ]]></itunes:summary>
                 <itunes:duration>{{post.podcast.length}}</itunes:duration>
                 {% endif %}
 			</item>

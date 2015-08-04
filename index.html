@@ -17,7 +17,7 @@ title: Home
         {% if post.content contains "<!-- more -->" %}
             {{ post.content | split:"<!-- more -->" | first % }}
         {% else %}
-            {{ post.content | strip_html | truncatewords:100 }}
+            {{ post.content | truncatewords:100 }}
             {% endif %}
         <div><a href="{{ post.url }}">(Continua leggere)</a></div>
     </div>
