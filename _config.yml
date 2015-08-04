@@ -21,12 +21,13 @@ author:
   url:               https://twitter.com/geekcookiescast
   email:             geekcookiespodcast@gmail.com
 
-# Custom vars
+# Custom vers
 version:             1.0.0
 
 future: false
 permalink: pretty
 markdown: kramdown
+excerpt_separator: <!-- more -->
 
 exclude:
 - README.md
