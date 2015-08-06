@@ -28,7 +28,7 @@ layout: null
 
         <itunes:category text="{{site.podcast.category}}" />
 
-		{% for post in site.posts limit:20 %}
+		{% for post in site.posts %}
 			<item>
                 {% assign post_url = site.url | append: post.url %}
                 {% assign post_title = post.title | append: " - " | append: site.title %}
