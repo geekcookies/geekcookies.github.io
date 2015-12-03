@@ -14,9 +14,3 @@ Casertano, come il Maiale Nero, classe '77, ha avuto modo a pochi anni di cominc
 Distrugge e modifica qualsiasi cosa gli passi per le mani. Gioca solo se puó usare trucchetti subdoli che lo fanno sentire un dio, altrimenti si annoia. Lo trovate con lo pseudonimo kidpixo, in onore al software di grafica per bambini [KidPix](http://en.wikipedia.org/wiki/Kid_Pix) per mac dei primi anni '90, su varie piattaforme : [Flickr](https://www.flickr.com/photos/kidpixo/), [Facebook](https://www.facebook.com/mario.damore77),[Linkedin](https://www.linkedin.com/in/mdamore), [Wordpress](http://kidpix.wordpress.com/) (un pó troppo d'annata) , [Mendeley](http://www.mendeley.com/profiles/mario-damore/), [LastFM](http://www.last.fm/user/kidpixo), [Jamendo](https://www.jamendo.com/it/user/kidpix) and so on.
 
 
-## Massimiliano
-
-Toscano, classe 1977. Scrive codice da quando aveva 8 anni. Dal momento che non lo reputava sufficiente pensa bene di laurearsi in Ingegneria Informatica e di scrivere altro codice per vivere. Patito di musica Rock ed appassionato di running vi parlerà di sviluppo software ed Android.
-Rintracciabile su Twitter [@fanciullim](https://twitter.com/fanciullim).
-
-
