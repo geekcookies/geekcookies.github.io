@@ -29,9 +29,3 @@ Twitter: [https://twitter.com/cesco_78](https://twitter.com/cesco_78)
 Twitter: [http://twitter.com/kidpixo](https://twitter.com/cesco_78)
 <br /> <br />
 
-##Massimiliano:
-
-Twitter: [http://twitter.com/fanciullim](http://twitter.com/fanciullim)
-
-Website: [http://fanciulli.github.io](http://fanciulli.github.io)
-
