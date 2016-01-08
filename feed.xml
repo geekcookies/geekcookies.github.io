@@ -45,7 +45,7 @@ layout: null
 				<guid isPermaLink="true">{{ post_url }}</guid>
 
                 {% if post.podcast %}
-                <enclosure url="{{post.podcast.filemp3}}" type="{{site.podcast.defaultFileType}}" length="{{post.podcast.filesize}}" />
+                <enclosure url="https://archive.org/download/{{ post.podcast.episode }}/{{ post.podcast.episode }}.mp3" type="{{site.podcast.defaultFileType}}" length="{{post.podcast.filesize}}" />
 
                 <itunes:author>{{site.podcast.owner.email}}</itunes:author>
                 <itunes:summary><![CDATA[
