@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Chi siamo 
+title: 
 ---
 
 Benvenuto prode geek!
@@ -17,7 +17,7 @@ Buona fortuna!
 <br />
 <span style="color:#101010"> Molto molto furbo, ma non basta:
 <br />
-continua a cercre!
+continua a cercare!
 <br />
 L'essenziale é invisibile al browser. ;-D </span>
 
