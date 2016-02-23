@@ -57,7 +57,9 @@ google:
 
 #Add a list of enabled gems (plugins) to your site's _config.yml file, such as:
 gems:
-    #- jek yll-mentions
+    #- jekyll-mentions
+    - jekyll-paginate
+    - jekyll-gist   
     - jemoji
     - jekyll-redirect-from
     - jekyll-sitemap
