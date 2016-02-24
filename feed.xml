@@ -2,9 +2,9 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>{{ site.title }}</title>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ site.title }}</title>
         <description>{{ site.description }}</description>
         <link>{{ site.url }}</link>
         <language>it-it</language>
@@ -28,11 +28,11 @@ layout: null
 
         <itunes:category text="{{site.podcast.category}}" />
 
-		{% for post in site.posts %}
-			<item>
+        {% for post in site.posts %}
+            <item>
                 {% assign post_url = site.url | append: post.url %}
                 {% assign post_title = post.title | append: " - " | append: site.title %}
-				<title>{{ post.title }}</title>
+                <title>{{ post.title }}</title>
                 <description><![CDATA[
                                 {% if post.content contains "<!-- more -->" %}
                                     {{ post.content | split:"<!-- more -->" | first % | strip_html}}
@@ -40,9 +40,14 @@ layout: null
                                     {{ post.content | strip_html | truncatewords:100 }}
                                 {% endif %}
                     ]]></description>
-				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-				<link>{{ post_url }}</link>
-				<guid isPermaLink="true">{{ post_url }}</guid>
+
+                    <content:encoded><![CDATA[
+                        {{ post.content }}
+                    ]]></content:encoded>
+
+                <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+                <link>{{ post_url }}</link>
+                <guid isPermaLink="true">{{ post_url }}</guid>
 
                 {% if post.podcast %}
                 <enclosure url="https://archive.org/download/{{ post.podcast.episode }}/{{ post.podcast.episode }}.mp3" type="{{site.podcast.defaultFileType}}" length="{{post.podcast.filesize}}" />
@@ -57,7 +62,7 @@ layout: null
                                 ]]></itunes:summary>
                 <itunes:duration>{{post.podcast.length}}</itunes:duration>
                 {% endif %}
-			</item>
-		{% endfor %}
-	</channel>
+            </item>
+        {% endfor %}
+    </channel>
 </rss>
