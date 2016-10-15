@@ -1,7 +1,7 @@
 
 #convert gdrive zipped html to markdown
 
-unzip -c ~/Downloads/Ep23-Docker.zip (unzip -l  ~/Downloads/Ep23-Docker.zip |  grep -oE '[^ ]+html$')  | pandoc --from html --to markdown-raw_html-native_divs-native_spans --parse-raw 
+unzip -c ~/Downloads/Ep23-Docker.zip (unzip -l  ~/Downloads/Ep23-Docker.zip |  grep -oE '[^ ]+html$')  | pandoc --from html --to markdown-raw_html-native_divs-native_spans --parse-raw  --wrap=preserve --atx-headers
 
 # create a commit hook to pass all the file who has this stuff :
 # 1. find 'regex' , if any ->
