@@ -24,7 +24,7 @@ author:
 # Custom vers
 version:             1.0.0
 
-future: false
+future: true
 permalink: pretty
 markdown: kramdown
 excerpt_separator: <!-- more -->
