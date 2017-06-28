@@ -15,7 +15,7 @@ title: Home
     <span class="post-date">{{ post.date | date_to_string }}</span>
     <div class="post-content-truncate">
         {% if post.content contains "<!-- more -->" %}
-            {{ post.content | split:"<!-- more -->" | first % }}
+            {{ post.content | split:"<!-- more -->" | first }}
         {% else %}
             {{ post.content | truncatewords:100 }}
             {% endif %}
