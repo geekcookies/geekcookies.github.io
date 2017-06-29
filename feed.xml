@@ -60,7 +60,7 @@ layout: null
                                     {{ post.content | strip_html | truncatewords:100 }}
                                 {% endif %}
                                 ]]></itunes:summary>
-                <itunes:duration>{{post.podcast.length}}</itunes:duration>
+                <itunes:duration>{{ post.podcast.length }}</itunes:duration>
                 {% endif %}
             </item>
         {% endfor %}
