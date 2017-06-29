@@ -55,7 +55,7 @@ layout: null
                 <itunes:author>{{site.podcast.owner.email}}</itunes:author>
                 <itunes:summary><![CDATA[
                                 {% if post.content contains "<!-- more -->" %}
-                                    {{ post.content | split:"<!-- more -->" | first % | strip_html}}
+                                    {{ post.content | split:"<!-- more -->" | first | strip_html}}
                                 {% else %}
                                     {{ post.content | strip_html | truncatewords:100 }}
                                 {% endif %}
