@@ -2,6 +2,7 @@
 layout     : podcast
 title      : "Episodio XX - " 
 date       : YYYY-MM-DD 13:47:09
+categories : podcast
 tags       : podcast 
 short      : "XX XX XX" 
 podcast    :
