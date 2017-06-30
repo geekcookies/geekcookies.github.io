@@ -6,11 +6,11 @@ tags       : podcast
 short      : "XX XX XX" 
 podcast    :
   episode       : geekcookies_ep_XX
-  filemp3_size : 
-  fileogg_size :
+  filemp3_size  :
+  fileogg_size  :
   filetorr_size :
-  filesize     :
-  length       :
+  filesize      :
+  length        :
 ---
 
 <!-- more -->
