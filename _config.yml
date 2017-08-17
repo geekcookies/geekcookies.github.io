@@ -12,7 +12,7 @@ title:               Geek Cookies.
 tagline:             'the Dark Side of the Geek.'
 description:         'Join the Dark Side of the Geek: we have Cookies.'
 url:                 http://geekcookies.github.io
-baseurl:             /
+baseurl:             
 paginate:            5
 
 # About/contact
