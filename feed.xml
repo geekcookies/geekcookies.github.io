@@ -2,5 +2,5 @@
 layout: redirected
 sitemap: false
 permalink: /feed.xml
-redirect_to: https://www.geekcooki.es/feed/podcast
+redirect_to:https://www.geekcooki.es/feed/podcast
 ---
