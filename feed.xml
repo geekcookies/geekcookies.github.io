@@ -18,6 +18,7 @@ layout: null
 
         <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
 
+        <itunes:new-feed-url>https://www.geekcooki.es/feed/podcast</itunes:new-feed-url>
         <itunes:author>{{site.url}}</itunes:author>
         <itunes:subtitle>{{site.podcast.subtitle}}</itunes:subtitle>
         <itunes:owner>
