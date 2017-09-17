@@ -1,5 +1,6 @@
-<redirect>
-<newLocation>
-https://www.geekcooki.es/feed/podcast
-</newLocation>
-</redirect>
+---
+layout: redirected
+sitemap: false
+permalink: /feed.xml
+redirect_to: https://www.geekcooki.es/feed/podcast
+---
