@@ -1,6 +1,68 @@
 ---
-layout: redirected
-sitemap: false
-permalink: /feed.xml
-redirect_to: https://www.geekcooki.es/feed/podcast
+layout: null
 ---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ site.title }}</title>
+        <description>{{ site.description }}</description>
+        <link>{{ site.url }}</link>
+        <language>it-it</language>
+        <copyright>Copyright {{site.podcast.year}}</copyright>
+        <webMaster>{{site.podcast.owner.email}} ({{site.podcast.owner.name}})</webMaster>
+        <image>
+            <url>{{site.podcast.image}}</url>
+            <title>{{site.title}}</title>
+            <link>{{site.url}}</link>
+        </image>
+
+        <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+
+        <itunes:author>{{site.url}}</itunes:author>
+        <itunes:subtitle>{{site.podcast.subtitle}}</itunes:subtitle>
+        <itunes:owner>
+            <itunes:name>{{site.podcast.owner.name}}</itunes:name>
+            <itunes:email>{{site.podcast.owner.email}}</itunes:email>
+        </itunes:owner>
+        <itunes:explicit>{{site.podcast.explicit}}</itunes:explicit>
+
+        <itunes:category text="{{site.podcast.category}}" />
+
+        {% for post in site.posts %}
+            <item>
+                {% assign post_url = site.url | append: post.url %}
+                {% assign post_title = post.title | append: " - " | append: site.title %}
+                <title>{{ post.title }}</title>
+                <description><![CDATA[
+                                {% if post.content contains "<!-- more -->" %}
+                                    {{ post.content | split:"<!-- more -->" | first | strip_html }}
+                                {% else %}
+                                    {{ post.content | strip_html | truncatewords:100 }}
+                                {% endif %}
+                    ]]></description>
+
+                    <content:encoded><![CDATA[
+                        {{ post.content }}
+                    ]]></content:encoded>
+
+                <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+                <link>{{ post_url }}</link>
+                <guid isPermaLink="true">{{ post_url }}</guid>
+
+                {% if post.podcast %}
+                <enclosure url="https://archive.org/download/{{ post.podcast.episode }}/{{ post.podcast.episode }}.mp3" type="{{site.podcast.defaultFileType}}" length="{{post.podcast.filesize}}" />
+
+                <itunes:author>{{site.podcast.owner.email}}</itunes:author>
+                <itunes:summary><![CDATA[
+                                {% if post.content contains "<!-- more -->" %}
+                                    {{ post.content | split:"<!-- more -->" | first | strip_html}}
+                                {% else %}
+                                    {{ post.content | strip_html | truncatewords:100 }}
+                                {% endif %}
+                                ]]></itunes:summary>
+                <itunes:duration>{{ post.podcast.length }}</itunes:duration>
+                {% endif %}
+            </item>
+        {% endfor %}
+    </channel>
+</rss>
