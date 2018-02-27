@@ -2,6 +2,8 @@
 
 /***************************
  * Librerie e File
+ * https://github.com/ThingPulse/esp8266-oled-ssd1306
+ * https://github.com/sparkfun/SparkFun_BME280_Arduino_Library
  **************************/
 #include <ESP8266WiFi.h>
 #include <Ticker.h>
