@@ -1,5 +1,5 @@
-_site
-*.swp
-*.swo
-.DS_Store
-Gemfile*
+# Ignore everything
+*
+# But not these files...
+!.gitignore
+!index.html
