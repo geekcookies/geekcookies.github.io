@@ -1,56 +1,17 @@
----
-layout: default
-title: Home
----
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    <div class="post-content-truncate">
-        {% if post.content contains "<!-- more -->" %}
-            {{ post.content | split:"<!-- more -->" | first }}
-        {% else %}
-            {{ post.content | truncatewords:100 }}
-            {% endif %}
-        <div><a href="{{ post.url }}">(Continua leggere)</a></div>
-    </div>
-    
- </div>
-  {% endfor %}
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="canonical" href="https://www.geekcooki.es/"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="0;url=https://www.geekcooki.es/" />
+</head>
+<body>
+    <h1>Redirecting...</h1>
+      <a href="https://www.geekcooki.es/">Click here if you are not redirected.<a>
+      <script>location='https://www.geekcooki.es/'</script>
+</body>
+</html>
 
-<div class="pagination">
-    {% if paginator.total_pages > 1 %}  
-    <div class="pagination">  
-      {% if paginator.previous_page %}  
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>  
-      {% else %}  
-        <span>&laquo; Prev</span>  
-      {% endif %}  
-      
-      {% for page in (1..paginator.total_pages) %}  
-        {% if page == paginator.page %}  
-          <b>{{ page }}</b>  
-        {% elsif page == 1 %}  
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>  
-        {% else %}  
-          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>  
-        {% endif %}  
-      {% endfor %}  
-      
-      {% if paginator.next_page %}  
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>  
-      {% else %}  
-        <span>Next &raquo;</span>  
-      {% endif %}  
-    </div>  
-    {% endif %}  
-</div>
 
